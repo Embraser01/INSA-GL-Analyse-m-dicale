@@ -1,11 +1,7 @@
 # Projet Génie Logiciel - Analyse médicale
 
-[![license](https://img.shields.io/github/license/Embraser01/INSA-GL-Analyse-medicale.svg)](./LICENSE.md)
-[![build](https://api.travis-ci.org/Embraser01/INSA-GL-Analyse-medicale.svg?branch=prod)](https://travis-ci.org/Embraser01/INSA-GL-Analyse-medicale)
-
 ## Presentation
-  Ceci est un projet fait en Génie Logiciel 3IF à l'INSA de Lyon. Le sujet est disponible [ici](./doc/sujet.pdf)
-  Auteurs :
+ Auteurs :
 *    Marc-Antoine FERNANDES
 *    Julia LU DAC
 *    Lucas ONO
@@ -101,8 +97,3 @@ donc il suffit de cloner le repo et ouvrir le projet.
 ### Lancer les tests unitaires
 
 Les tests unitaires sont déjà configurés dans le `CMakeLists.txt`.
-
-## Licence
-
-[Copyright (C) 2017  Marc-Antoine FERNANDES, 
-Julia LU DAC, Lucas ONO, Tianhao WU, Ye YUAN](./LICENSE.md)
