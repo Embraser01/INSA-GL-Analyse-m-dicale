@@ -4,7 +4,7 @@
 [![build](https://api.travis-ci.org/Embraser01/INSA-GL-Analyse-medicale.svg?branch=prod)](https://travis-ci.org/Embraser01/INSA-GL-Analyse-medicale)
 
 ## Presentation
-  Ceci est un projet fait en Génie Logiciel 3IF à l'INSA de Lyon. Le sujet est disponible [ici](./doc/sujet.pdf)
+  Ceci est un projet fait en Génie Logiciel 3IF à l'INSA de Lyon. Le sujet est disponible [ici](docs/sujet.pdf)
   Auteurs :
 *    Marc-Antoine FERNANDES
 *    Julia LU DAC
