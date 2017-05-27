@@ -1,4 +1,4 @@
-#include <catch.hpp>
+#include <catch/catch.hpp>
 #include <models/Genome.h>
 #include <services/AnalysisService.h>
 

@@ -1,4 +1,4 @@
-#include <catch.hpp>
+#include <catch/catch.hpp>
 #include <utils/utils.h>
 #include <controllers/ListController.h>
 #include <controllers/OneController.h>

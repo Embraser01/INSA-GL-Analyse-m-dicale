@@ -1,4 +1,4 @@
-#include <catch.hpp>
+#include <catch/catch.hpp>
 #include <utils/utils.h>
 
 using Catch::Matchers::Vector::ContainsElementMatcher;

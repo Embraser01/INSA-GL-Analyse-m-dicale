@@ -1,4 +1,4 @@
-#include <catch.hpp>
+#include <catch/catch.hpp>
 #include <storage/DiseaseDAO.h>
 
 TEST_CASE("Loading diseases", "[server][storage]") {

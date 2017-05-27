@@ -1,6 +1,6 @@
 #include <models/Disease.h>
 #include <models/Genome.h>
-#include <catch.hpp>
+#include <catch/catch.hpp>
 
 
 TEST_CASE("Genome model", "[models][server]") {
