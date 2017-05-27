@@ -27,14 +27,14 @@ target_include_directories(Catch INTERFACE libs/catch)
 
 #---- APPS ----#
 
-add_subdirectory(MedAnalysisClient)
-add_subdirectory(MedAnalysisServer)
+add_subdirectory(Client)
+add_subdirectory(Server)
 
 #---- TESTS ----#
 
-add_subdirectory(tests/MedAnalysisClientUnitTest)
-add_subdirectory(tests/MedAnalysisServerUnitTest)
+add_subdirectory(tests/Client)
+add_subdirectory(tests/Server)
 
 enable_testing()
-add_test(NAME MedAnalysisClientUnitTest COMMAND MedAnalysisClientUnitTest WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR})
-add_test(NAME MedAnalysisServerUnitTest COMMAND MedAnalysisServerUnitTest WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR})
+add_test(NAME ClientTests COMMAND ClientTests WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR})
+add_test(NAME ServerTests COMMAND ServerTests WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR})
