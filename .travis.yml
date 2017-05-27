@@ -3,6 +3,10 @@
 language: cpp
 compiler: g++
 
+branches:
+  except:
+  - vs
+
 sudo: true
 
 before_install:
