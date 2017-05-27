@@ -9,19 +9,20 @@ using std::string;
 using std::vector;
 
 TEST_CASE("List Controller", "[controller][server]") {
-    vector<string> str;
-    vector<string> input;
+    // check whole request for a complete evaluation
+
+    vector<string> str; // la reponse
+    vector<string> input; // la requete
     input.push_back("MA v1.0");
     input.push_back("GET DISEASES");
     input.push_back("");
 
-    str = ListController("./res/dictionnaire").doGetList(input);
+    str = ListController("./res/dico1.txt").doGetList(input);
     REQUIRE(str[0] == "MA v1.0");
     REQUIRE(str[1] == "DISEASES");
-    //REQUIRE(str[2]=="");
     REQUIRE(str[2] == "Cancer");
-    REQUIRE(str[3] == "Con");
-    REQUIRE(str[4] == "Petitbite");
+    REQUIRE(str[3] == "Disease007");
+    REQUIRE(str[4] == "Disease117");
     REQUIRE(str[5] == "");
 }
 
@@ -29,14 +30,13 @@ TEST_CASE("One Controller", "[controller][server]") {
     vector<string> str;
     vector<string> input;
     input.push_back("MA v1.0");
-    input.push_back("CHECK DISEASES");
-    input.push_back("Cancer");
-    input.push_back("CCCC;TATA");
+    input.push_back("CHECK DISEASES"); // DISEASE\r\nDisease117\r\nACAC;ATA;AAAA;TATA;A\r\n\r\n
+    input.push_back("Disease117");
+    input.push_back("ACAC;ATA;AAAA;TATA;A");
     input.push_back("");
-    str = OneController().doOneEvaluation(input, "./res/dictionnaire");
+    str = OneController().doOneEvaluation(input, "./res/dico1.txt");
     REQUIRE(str[0] == "MA v1.0");
-    REQUIRE(str[1] == "DISEASE Cancer");
-    //REQUIRE(str[2]=="");
+    REQUIRE(str[1] == "DISEASE Disease117");
     REQUIRE(str[2] == "1");
     REQUIRE(str[3] == "");
 }
@@ -46,12 +46,10 @@ TEST_CASE("All Controller", "[controller][server]") {
     vector<string> input;
     input.push_back("MA v1.0");
     input.push_back("CHECK ALL");
-    input.push_back("CCCC;TATA;TTAA");
-    //input.push_back("TATA");
-    //input.push_back("");
-    str = AllController("./res/dictionnaire").doCompleteEvaluation(input);
+    input.push_back("ACAC;ATA;AAAA;TATA;A");
+    input.push_back("");
+    str = AllController("./res/dico1.txt").doCompleteEvaluation(input);
     REQUIRE(str[0] == "MA v1.0");
-    REQUIRE(str[1] == "DISEASE Cancer");
-
+    REQUIRE(str[1] == "DISEASE Disease117");
     REQUIRE(str[2] == "");
 }
