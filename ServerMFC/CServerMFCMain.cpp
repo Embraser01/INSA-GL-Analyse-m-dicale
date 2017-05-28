@@ -90,8 +90,10 @@ HCURSOR CServerMFCMain::OnQueryDragIcon()
 
 void CServerMFCMain::OnBnClickedServerStart()
 {
-
+	
 	// TODO: ajoutez ici le code de votre gestionnaire de notification de contrôle
 
-	AllController allController("");
+
+	// TODO Check port
+
 }

@@ -187,14 +187,18 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="ClientSocket.h" />
     <ClInclude Include="CServerMFCMain.h" />
     <ClInclude Include="Resource.h" />
+    <ClInclude Include="ServerListener.h" />
     <ClInclude Include="ServerMFC.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="ClientSocket.cpp" />
     <ClCompile Include="CServerMFCMain.cpp" />
+    <ClCompile Include="ServerListener.cpp" />
     <ClCompile Include="ServerMFC.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>

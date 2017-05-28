@@ -32,4 +32,6 @@ protected:
 	DECLARE_MESSAGE_MAP()
 public:
 	afx_msg void OnBnClickedServerStart();
+
+	int m_port; // Port où écoutera le serveur
 };
