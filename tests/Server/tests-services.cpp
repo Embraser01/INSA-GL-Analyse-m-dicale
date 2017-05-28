@@ -39,9 +39,10 @@ TEST_CASE("Getting diseases", "[server][service]") {
     unordered_multimap<std::string, Disease>::iterator iter;
     vector<string> diseases;
     //diseases on the iterator qre on the opposite order
+
+	diseases.push_back("Cancer");
+	diseases.push_back("YYSB");
     diseases.push_back("YYDSB");
-    diseases.push_back("YYSB");
-    diseases.push_back("Cancer");
 
     int i = 0;
     for (iter = diseasesMap.begin(); iter != diseasesMap.end(); iter++) {

@@ -4,6 +4,7 @@
 #include "stdafx.h"
 #include "ServerMFC.h"
 #include "ServerListener.h"
+#include "ClientSocket.h"
 
 
 // ServerListener
