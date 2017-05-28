@@ -1,5 +1,5 @@
 #include <models/Server.h>
-#include <catch.hpp>
+#include <catch/catch.hpp>
 
 
 TEST_CASE("Server model", "[models]") {

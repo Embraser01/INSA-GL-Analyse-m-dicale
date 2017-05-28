@@ -1,63 +1,66 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="R:\Documents\_INSA\3\GL\MedAnalysis\Client\main.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="R:\Documents\_INSA\3\GL\MedAnalysis\Client\models\Disease.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="R:\Documents\_INSA\3\GL\MedAnalysis\Client\models\Genome.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="R:\Documents\_INSA\3\GL\MedAnalysis\Client\models\Server.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="R:\Documents\_INSA\3\GL\MedAnalysis\Client\services\AnalysisService.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="R:\Documents\_INSA\3\GL\MedAnalysis\Client\services\ServerService.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="R:\Documents\_INSA\3\GL\MedAnalysis\Client\storage\ServerDAO.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
+    <Filter Include="Fichiers sources">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Fichiers de ressources">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <Filter Include="Source Files">
-      <UniqueIdentifier>{47B03472-3DC3-3D15-BB90-A93FA81003CD}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files">
-      <UniqueIdentifier>{60c9d970-e77b-4615-9854-91b61f7048a8}</UniqueIdentifier>
-    </Filter>
+    <ClCompile Include="models\Disease.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="models\Genome.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="models\Server.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="services\AnalysisService.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="services\ServerService.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="storage\ServerDAO.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="storage\ServerDAO.h">
-      <Filter>Header Files</Filter>
+      <Filter>Fichiers d%27en-tête</Filter>
     </ClInclude>
     <ClInclude Include="services\AnalysisService.h">
-      <Filter>Header Files</Filter>
+      <Filter>Fichiers d%27en-tête</Filter>
     </ClInclude>
     <ClInclude Include="services\ServerService.h">
-      <Filter>Header Files</Filter>
+      <Filter>Fichiers d%27en-tête</Filter>
     </ClInclude>
     <ClInclude Include="models\Disease.h">
-      <Filter>Header Files</Filter>
+      <Filter>Fichiers d%27en-tête</Filter>
     </ClInclude>
     <ClInclude Include="models\Genome.h">
-      <Filter>Header Files</Filter>
+      <Filter>Fichiers d%27en-tête</Filter>
     </ClInclude>
     <ClInclude Include="models\Server.h">
-      <Filter>Header Files</Filter>
+      <Filter>Fichiers d%27en-tête</Filter>
     </ClInclude>
     <ClInclude Include="exceptions\CommunicationException.h">
-      <Filter>Header Files</Filter>
+      <Filter>Fichiers d%27en-tête</Filter>
     </ClInclude>
     <ClInclude Include="exceptions\ReadException.h">
-      <Filter>Header Files</Filter>
+      <Filter>Fichiers d%27en-tête</Filter>
     </ClInclude>
     <ClInclude Include="exceptions\ServiceException.h">
-      <Filter>Header Files</Filter>
+      <Filter>Fichiers d%27en-tête</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
