@@ -112,6 +112,22 @@ le projet et d'ouvrir la solution sur Visual Studio (VS 2017+)
 
 ### Lancer les tests
 
+Les tests utilisent la librairie [_Catch_](https://github.com/philsquared/Catch).
+
+
+Pour que les tests fonctionnent, il faut configurer les projets pour 
+que le dossier de travail soit la racine de la solution. 
+
+Pour cela, il suffit de faire : clic droit sur _ServerTests_ > Onglet
+_Deboggage_ > dans _Dossier de travail_ remplacer `$(ProjectDir)` par `$(SolutionDir)`.
+
+Refaire la même chose pour _ClientTests_
+
+Maintenant pour lancer les tests, il faut soit lancer l'executable généré par VS,
+soit utiliser l'extension [_Resharper C++_](https://www.jetbrains.com/resharper-cpp/) 
+qui offre une interface de test. Dans ce cas là, il faut lancer les tests en faisant 
+Clic droit sur le projet > Run Unit Test
+
 
 ## Licence
 
