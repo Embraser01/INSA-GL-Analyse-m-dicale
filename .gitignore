@@ -287,3 +287,7 @@ __pycache__/
 *.odx.cs
 *.xsd.cs
 cmake-build-debug/
+/Client/CMakeFiles
+/Server/CMakeFiles
+/CMakeFiles
+
