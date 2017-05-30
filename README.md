@@ -18,6 +18,8 @@
 *    Tianhao WU
 *    Ye YUAN
 
+_Remarque :_ L'ensemble de la documentation est disponible dans le dossier [`docs`](docs/)
+
 -------------------------------------------------------------------------------
 
 ## Utiliser l'application
