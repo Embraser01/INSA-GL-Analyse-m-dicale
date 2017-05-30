@@ -3,6 +3,12 @@
 [![license](https://img.shields.io/github/license/Embraser01/INSA-GL-Analyse-medicale.svg)](./LICENSE.md)
 [![build](https://api.travis-ci.org/Embraser01/INSA-GL-Analyse-medicale.svg?branch=prod)](https://travis-ci.org/Embraser01/INSA-GL-Analyse-medicale)
 
+# Sommaire
+1. [Presentation](#presentation)
+2. [Utiliser l'application](#utiliser-lapplication)
+3. [Contribuer](#contribuer)
+
+
 ## Presentation
   Ceci est un projet fait en Génie Logiciel 3IF à l'INSA de Lyon. Le sujet est disponible [ici](docs/sujet.pdf)
   Auteurs :
