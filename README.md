@@ -1,7 +1,6 @@
-# Projet Génie Logiciel - Analyse médicale
+# Projet GÃ©nie Logiciel - Analyse mÃ©dicale
 
 ## Presentation
-  Ceci est un projet fait en Génie Logiciel 3IF à l'INSA de Lyon. Le sujet est disponible [ici](docs/sujet.pdf)
   Auteurs :
 *    Marc-Antoine FERNANDES
 *    Julia LU DAC
@@ -15,89 +14,89 @@
 
 ### Serveur
 
-L'application serveur permet d'évaluer les maladies possibles qui peuvent être incluses dans un génome. 
+L'application serveur permet d'Ã©valuer les maladies possibles qui peuvent Ãªtre incluses dans un gÃ©nome. 
 
-##### Fichiers utilisés
+##### Fichiers utilisÃ©s
 
-Il s'appuie sur un fichier contenant un dictionnaire des maladies qu'il est capable d'évaluer. 
+Il s'appuie sur un fichier contenant un dictionnaire des maladies qu'il est capable d'Ã©valuer. 
 
-##### Démarrage du serveur
+##### DÃ©marrage du serveur
 
-Lorsque l'interface est lancée, un numéro de port sur lequel doit démarrer le serveur est demandé, 
-ainsi que le nom du fichier contenant le dictionnaire de maladies. C'est le port sur lequel sera lancée l'application serveur. 
-Ces paramètres choisis, il suffit de cliquer sur le bouton "Start Server", qui démarrera le serveur si tout fonctionne.
-Un serveur en exécution est capable de répondre à des requêtes de client arrivant sur son adresse IP et son numéro de port. 
-Ces requêtes doivent concerner l'une des trois fonctions : 
+Lorsque l'interface est lancÃ©e, un numÃ©ro de port sur lequel doit dÃ©marrer le serveur est demandÃ©, 
+ainsi que le nom du fichier contenant le dictionnaire de maladies. C'est le port sur lequel sera lancÃ©e l'application serveur. 
+Ces paramÃ¨tres choisis, il suffit de cliquer sur le bouton "Start Server", qui dÃ©marrera le serveur si tout fonctionne.
+Un serveur en exÃ©cution est capable de rÃ©pondre Ã  des requÃªtes de client arrivant sur son adresse IP et son numÃ©ro de port. 
+Ces requÃªtes doivent concerner l'une des trois fonctions : 
 
 * Fournir la liste des maladies du dictionnaire
 
-* Indiquer si un risque de maladie est présente dans un génome
+* Indiquer si un risque de maladie est prÃ©sente dans un gÃ©nome
 
-* Fournir la liste des risques de maladie dans un génome
+* Fournir la liste des risques de maladie dans un gÃ©nome
 
 
 ##### Diffusion de l'adresse IP et du port via multicast
 
-Un bouton "Start Multicast" permet au serveur d'envoyer à intervalles réguliers (2.5 s) son adresse IP et
+Un bouton "Start Multicast" permet au serveur d'envoyer Ã  intervalles rÃ©guliers (2.5 s) son adresse IP et
 le port de connexion sur une adresse multicast, pour en informer les clients. L'adresse IP est 225.6.7.8 et le port est 5678.
-Le bouton "Stop Multicast" permet d'arrêter ces envois.
+Le bouton "Stop Multicast" permet d'arrÃªter ces envois.
 
 
 ##### Quitter
-Un bouton permet de quitter l'application à tout moment.
+Un bouton permet de quitter l'application Ã  tout moment.
 
 
 ##### Erreurs possibles 
-Lorsque le fichier du dictionnaire des maladies ou que le port sur lequel vous voulez démarrer est déjà occupé, le serveur ne démarre pas 
-et vous devrez spécifier une autre valeur.
+Lorsque le fichier du dictionnaire des maladies ou que le port sur lequel vous voulez dÃ©marrer est dÃ©jÃ  occupÃ©, le serveur ne dÃ©marre pas 
+et vous devrez spÃ©cifier une autre valeur.
 
 
 --------
 
 ### Client
 
-L'application cliente permet d'obtenir des évaluations des maladies à risque sur des génomes de patient.
-Pour cela, elle envoie des requêtes à des serveurs qui lui envoient la réponse.
+L'application cliente permet d'obtenir des Ã©valuations des maladies Ã  risque sur des gÃ©nomes de patient.
+Pour cela, elle envoie des requÃªtes Ã  des serveurs qui lui envoient la rÃ©ponse.
 
 
-##### Evaluer une analyse médicale
+##### Evaluer une analyse mÃ©dicale
 
 
-C'est la fonction primaire de l'application. Lorsque l'on clique sur ce bouton, une fenêtre s'ouvre avec 3 boutons. Chaque bouton permet d'envoyer une requête à un ou plusieurs serveurs :
+C'est la fonction primaire de l'application. Lorsque l'on clique sur ce bouton, une fenÃªtre s'ouvre avec 3 boutons. Chaque bouton permet d'envoyer une requÃªte Ã  un ou plusieurs serveurs :
 
-* Get diseases : Vous recevrez la liste des maladies à risque que le serveur cible est capable d'évaluer.
+* Get diseases : Vous recevrez la liste des maladies Ã  risque que le serveur cible est capable d'Ã©valuer.
 
-* Evaluate All Disease : Le génome à évaluer est demandé. Vous recevrez la liste de l'ensemble des 
-maladies à risque que les serveurs répertoriés ont trouvé sur ce génome.
+* Evaluate All Disease : Le gÃ©nome Ã  Ã©valuer est demandÃ©. Vous recevrez la liste de l'ensemble des 
+maladies Ã  risque que les serveurs rÃ©pertoriÃ©s ont trouvÃ© sur ce gÃ©nome.
 
-* Evaluate One Disease : Le génome à évaluer et la maladie à chercher sur ce génome sont demandés. 
-Vous recevrez une réponse "Yes" ou "No" lors de la présence ou non de la maladie sur le génome.
+* Evaluate One Disease : Le gÃ©nome Ã  Ã©valuer et la maladie Ã  chercher sur ce gÃ©nome sont demandÃ©s. 
+Vous recevrez une rÃ©ponse "Yes" ou "No" lors de la prÃ©sence ou non de la maladie sur le gÃ©nome.
 
-##### Gestion des serveurs enregistrés
-Une fenêtre s'ouvre. 
-* Update Servers List : met à jour les serveurs répertoriés dans la base de données. 
+##### Gestion des serveurs enregistrÃ©s
+Une fenÃªtre s'ouvre. 
+* Update Servers List : met Ã  jour les serveurs rÃ©pertoriÃ©s dans la base de donnÃ©es. 
 
-* Add Server : permet d'ajouter manuellement un serveur dans la base de données. 
-Son adresse IP et son nom sont demandés. 
+* Add Server : permet d'ajouter manuellement un serveur dans la base de donnÃ©es. 
+Son adresse IP et son nom sont demandÃ©s. 
 
-* Remove Server : permet d'enlever manuellement un serveur répertorié de la base de données. 
-Son adresse IP est demandée. 
+* Remove Server : permet d'enlever manuellement un serveur rÃ©pertoriÃ© de la base de donnÃ©es. 
+Son adresse IP est demandÃ©e. 
 
 
 ##### Quitter
-Un bouton permet de fermer l'application à tout moment.
+Un bouton permet de fermer l'application Ã  tout moment.
 
 ##### Erreurs possibles 
-* Impossible de lire le fichier contenant le génome
-* Impossible de manipuler la base de données des serveurs répertoriés
-* Erreur de réseau 
+* Impossible de lire le fichier contenant le gÃ©nome
+* Impossible de manipuler la base de donnÃ©es des serveurs rÃ©pertoriÃ©s
+* Erreur de rÃ©seau 
 
 
 -------------------------------------------------------------------------------
 
 ## Contribuer
 
-### Dépendance
+### DÃ©pendance
 
 * [Visual Studio 2017+](https://www.visualstudio.com/)
 
@@ -118,9 +117,9 @@ que le dossier de travail soit la racine de la solution.
 Pour cela, il suffit de faire : clic droit sur _ServerTests_ > Onglet
 _Deboggage_ > dans _Dossier de travail_ remplacer `$(ProjectDir)` par `$(SolutionDir)`.
 
-Refaire la même chose pour _ClientTests_
+Refaire la mÃªme chose pour _ClientTests_
 
-Maintenant pour lancer les tests, il faut soit lancer l'executable généré par VS,
+Maintenant pour lancer les tests, il faut soit lancer l'executable gÃ©nÃ©rÃ© par VS,
 soit utiliser l'extension [_Resharper C++_](https://www.jetbrains.com/resharper-cpp/) 
-qui offre une interface de test. Dans ce cas là, il faut lancer les tests en faisant 
+qui offre une interface de test. Dans ce cas lÃ , il faut lancer les tests en faisant 
 Clic droit sur le projet > Run Unit Test
