@@ -20,8 +20,8 @@ TEST_CASE("List Controller", "[controller][server]") {
     REQUIRE(str[1] == "DISEASES");
     //REQUIRE(str[2]=="");
     REQUIRE(str[2] == "Cancer");
-    REQUIRE(str[3] == "Con");
-    REQUIRE(str[4] == "Petitbite");
+    REQUIRE(str[3] == "Grippe");
+    REQUIRE(str[4] == "Parkinson");
     REQUIRE(str[5] == "");
 }
 
